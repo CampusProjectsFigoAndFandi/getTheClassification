@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cluster for Masjid Ulul Azmi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-violet-50">
+    <main class="">
+      <div
+        id="headerKuisioner "
+        class="flex flex-wrap justify-center align-center my-5"
+      >
+        <div
+          class="w-3/5 rounded-lg overflow-hidden border-2 border-violet-200"
+        >
+          <div class="h-3 w-100 bg-violet-800"></div>
+          <div class="flex flex-col bg-white py-5 px-6">
+            <div class="text-3xl font-semibold mb-4">
+              Klasifikasi Kepuasan Layanan dan Fasilitas di Masjid Ulul Azmi
+              Universitas Airlangga
+            </div>
+            <div class="text-sm text-slate-700">
+              Oleh Kelompok 2 Kelas I1 AVD Praktikum
+            </div>
+          </div>
+        </div>
+      </div>
+      <form action="{% url 'home' %}" method="POST">
+        {% csrf_token %}
+        <div class="flex flex-wrap justify-center align-center my-4">
+          <div class="w-3/5">
+            <div
+              id="pertanyaan_1"
+              class="flex flex-col bg-white py-5 px-6 gap-2 my-4 rounded-lg overflow-hidden questionContainer border-2 border-violet-200"
+            >
+              <div class="mb-2 text-lg">Tempat sholat dalam keadaan bersih</div>
+              <div class="flex flex-row justify-around">
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_1"
+                    value="1"
+                    id="jawaban_1_1"
+                  />
+                  <label class="text-center" for="jawaban_1_1">1</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_1"
+                    value="2"
+                    id="jawaban_1_2"
+                  />
+                  <label class="text-center" for="jawaban_1_2">2</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_1"
+                    value="3"
+                    id="jawaban_1_3"
+                  />
+                  <label class="text-center" for="jawaban_1_3">3</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_1"
+                    value="4"
+                    id="jawaban_1_4"
+                  />
+                  <label class="text-center" for="jawaban_1_4">4</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_1"
+                    value="5"
+                    id="jawaban_1_5"
+                  />
+                  <label class="text-center" for="jawaban_1_5">5</label>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="pertanyaan_2"
+              class="flex flex-col bg-white py-5 px-6 gap-2 my-4 rounded-lg overflow-hidden questionContainer border-2 border-violet-200"
+            >
+              <div class="mb-2 text-lg">Tempat wudhu dalam keadaan bersih</div>
+              <div class="flex flex-row justify-around">
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_2"
+                    value="1"
+                    id="jawaban_2_1"
+                  />
+                  <label class="text-center" for="jawaban_2_1">1</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_2"
+                    value="2"
+                    id="jawaban_2_2"
+                  />
+                  <label class="text-center" for="jawaban_2_2">2</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_2"
+                    value="3"
+                    id="jawaban_2_3"
+                  />
+                  <label class="text-center" for="jawaban_2_3">3</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_2"
+                    value="4"
+                    id="jawaban_2_4"
+                  />
+                  <label class="text-center" for="jawaban_2_4">4</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_2"
+                    value="5"
+                    id="jawaban_2_5"
+                  />
+                  <label class="text-center" for="jawaban_2_5">5</label>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="pertanyaan_3"
+              class="flex flex-col bg-white py-5 px-6 gap-2 my-4 rounded-lg overflow-hidden questionContainer border-2 border-violet-200"
+            >
+              <div class="mb-2 text-lg">
+                Tempat penyimpanan alas kaki cukup memadai dan bersih
+              </div>
+              <div class="flex flex-row justify-around">
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_3"
+                    value="1"
+                    id="jawaban_3_1"
+                  />
+                  <label class="text-center" for="jawaban_3_1">1</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_3"
+                    value="2"
+                    id="jawaban_3_2"
+                  />
+                  <label class="text-center" for="jawaban_3_2">2</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_3"
+                    value="3"
+                    id="jawaban_3_3"
+                  />
+                  <label class="text-center" for="jawaban_3_3">3</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_3"
+                    value="4"
+                    id="jawaban_3_4"
+                  />
+                  <label class="text-center" for="jawaban_3_4">4</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_3"
+                    value="5"
+                    id="jawaban_3_5"
+                  />
+                  <label class="text-center" for="jawaban_3_5">5</label>
+                </div>
+              </div>
+            </div>
+            <div
+              id="pertanyaan_4"
+              class="flex flex-col bg-white py-5 px-6 gap-2 my-4 rounded-lg overflow-hidden questionContainer border-2 border-violet-200"
+            >
+              <div class="mb-2 text-lg">
+                Sabun cuci tangan selalu tersedia di wastafel
+              </div>
+              <div class="flex flex-row justify-around">
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_4"
+                    value="1"
+                    id="jawaban_4_1"
+                  />
+                  <label class="text-center" for="jawaban_4_1">1</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_4"
+                    value="2"
+                    id="jawaban_4_2"
+                  />
+                  <label class="text-center" for="jawaban_4_2">2</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_4"
+                    value="3"
+                    id="jawaban_4_3"
+                  />
+                  <label class="text-center" for="jawaban_4_3">3</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_4"
+                    value="4"
+                    id="jawaban_4_4"
+                  />
+                  <label class="text-center" for="jawaban_4_4">4</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_4"
+                    value="5"
+                    id="jawaban_4_5"
+                  />
+                  <label class="text-center" for="jawaban_4_5">5</label>
+                </div>
+              </div>
+            </div>
+            <div
+              id="pertanyaan_5"
+              class="flex flex-col bg-white py-5 px-6 gap-2 my-4 rounded-lg overflow-hidden questionContainer border-2 border-violet-200"
+            >
+              <div class="mb-2 text-lg">
+                Masjid mudah dijangkau civitas akademika
+              </div>
+              <div class="flex flex-row justify-around">
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_5"
+                    value="1"
+                    id="jawaban_5_1"
+                  />
+                  <label class="text-center" for="jawaban_5_1">1</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_5"
+                    value="2"
+                    id="jawaban_5_2"
+                  />
+                  <label class="text-center" for="jawaban_5_2">2</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_5"
+                    value="3"
+                    id="jawaban_5_3"
+                  />
+                  <label class="text-center" for="jawaban_5_3">3</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_5"
+                    value="4"
+                    id="jawaban_5_4"
+                  />
+                  <label class="text-center" for="jawaban_5_4">4</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_5"
+                    value="5"
+                    id="jawaban_5_5"
+                  />
+                  <label class="text-center" for="jawaban_5_5">5</label>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="pertanyaan_6"
+              class="flex flex-col bg-white py-5 px-6 gap-2 my-4 rounded-lg overflow-hidden questionContainer border-2 border-violet-200"
+            >
+              <div class="mb-2 text-lg">
+                Jumlah pengunjung per hari tergolong banyak
+              </div>
+              <div class="flex flex-row justify-around">
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_6"
+                    value="1"
+                    id="jawaban_6_1"
+                  />
+                  <label class="text-center" for="jawaban_6_1">1</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_6"
+                    value="2"
+                    id="jawaban_6_2"
+                  />
+                  <label class="text-center" for="jawaban_6_2">2</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_6"
+                    value="3"
+                    id="jawaban_6_3"
+                  />
+                  <label class="text-center" for="jawaban_6_3">3</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_6"
+                    value="4"
+                    id="jawaban_6_4"
+                  />
+                  <label class="text-center" for="jawaban_6_4">4</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_6"
+                    value="5"
+                    id="jawaban_6_5"
+                  />
+                  <label class="text-center" for="jawaban_6_5">5</label>
+                </div>
+              </div>
+            </div>
+            <div
+              id="pertanyaan_7"
+              class="flex flex-col bg-white py-5 px-6 gap-2 my-4 rounded-lg overflow-hidden questionContainer border-2 border-violet-200"
+            >
+              <div class="mb-2 text-lg">
+                Stop kontak yang tersedia dapat berfungsi dengan baik
+              </div>
+              <div class="flex flex-row justify-around">
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_7"
+                    value="1"
+                    id="jawaban_7_1"
+                  />
+                  <label class="text-center" for="jawaban_7_1">1</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_7"
+                    value="2"
+                    id="jawaban_7_2"
+                  />
+                  <label class="text-center" for="jawaban_7_2">2</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_7"
+                    value="3"
+                    id="jawaban_7_3"
+                  />
+                  <label class="text-center" for="jawaban_7_3">3</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_7"
+                    value="4"
+                    id="jawaban_7_4"
+                  />
+                  <label class="text-center" for="jawaban_7_4">4</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_7"
+                    value="5"
+                    id="jawaban_7_5"
+                  />
+                  <label class="text-center" for="jawaban_7_5">5</label>
+                </div>
+              </div>
+            </div>
+            <div
+              id="pertanyaan_8"
+              class="flex flex-col bg-white py-5 px-6 gap-2 my-4 rounded-lg overflow-hidden questionContainer border-2 border-violet-200"
+            >
+              <div class="mb-2 text-lg">
+                Pendingin ruang berfungsi dengan baik
+              </div>
+              <div class="flex flex-row justify-around">
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_8"
+                    value="1"
+                    id="jawaban_8_1"
+                  />
+                  <label class="text-center" for="jawaban_8_1">1</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_8"
+                    value="2"
+                    id="jawaban_8_2"
+                  />
+                  <label class="text-center" for="jawaban_8_2">2</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_8"
+                    value="3"
+                    id="jawaban_8_3"
+                  />
+                  <label class="text-center" for="jawaban_8_3">3</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_8"
+                    value="4"
+                    id="jawaban_8_4"
+                  />
+                  <label class="text-center" for="jawaban_8_4">4</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_8"
+                    value="5"
+                    id="jawaban_8_5"
+                  />
+                  <label class="text-center" for="jawaban_8_5">5</label>
+                </div>
+              </div>
+            </div>
+            <div
+              id="pertanyaan_9"
+              class="flex flex-col bg-white py-5 px-6 gap-2 my-4 rounded-lg overflow-hidden questionContainer border-2 border-violet-200"
+            >
+              <div class="mb-2 text-lg">
+                Tingkat kepercayaan saya meningkat jika event keagamaan
+                diselenggarakan di Masjid Ulul Azmi
+              </div>
+              <div class="flex flex-row justify-around">
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_9"
+                    value="1"
+                    id="jawaban_9_1"
+                  />
+                  <label class="text-center" for="jawaban_9_1">1</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_9"
+                    value="2"
+                    id="jawaban_9_2"
+                  />
+                  <label class="text-center" for="jawaban_9_2">2</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_9"
+                    value="3"
+                    id="jawaban_9_3"
+                  />
+                  <label class="text-center" for="jawaban_9_3">3</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_9"
+                    value="4"
+                    id="jawaban_9_4"
+                  />
+                  <label class="text-center" for="jawaban_9_4">4</label>
+                </div>
+                <div
+                  class="flex flex-col gap-3 align-center w-16 justify-center"
+                >
+                  <input
+                    required
+                    type="radio"
+                    class="text-xl"
+                    name="jawaban_9"
+                    value="5"
+                    id="jawaban_9_5"
+                  />
+                  <label class="text-center" for="jawaban_9_5">5</label>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 flex justify-end">
+              <button
+                class="rounded-lg bg-violet-800 text-white py-2 px-4 w-24 text-lg mb-12 mt-3 w-full focus:ring-2"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
