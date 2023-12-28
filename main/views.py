@@ -10,9 +10,9 @@ def home(request):
         for i in range(1,10):
             answers.append(request.POST.get(f'jawaban_{i}'))
         cluster,accuracy = getCluster(answers)
-        if (cluster == 0 ):
+        if (cluster == 1 ):
             valueCluster = "Puas"
-        elif (cluster == 1 ):
+        elif (cluster == 0 ):
             valueCluster = "Tidak Puas"
         else:
             valueCluster = "Gagal Mengcluster"
